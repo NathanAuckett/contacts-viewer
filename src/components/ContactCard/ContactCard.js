@@ -18,7 +18,7 @@ function InfoListItem(props){
             <Container>
                 <Row>
                     <Col xs={2}>
-                        <a href={props.url} target="_blank">
+                        <a href={props.url} target="_blank" rel="noreferrer">
                             <img src = {props.icon} width="32px"></img>
                         </a>
                     </Col>
@@ -46,34 +46,34 @@ export default function Contact(props){
     const contact = props.contact;
 
     return (
-        <Col lg={8}>
-        <Card className='contactCard bg-secondary text-light'>
-            <Card.Header className='text-center'>{contact.name}</Card.Header>
-            <ListGroup variant="flush">
-                <InfoListItem icon={CallIcon} info={contact.phone} url={`tel: ${contact.phone}`}/>
-                <InfoListItem icon={EmailIcon} info={contact.email} url={`mailto: ${contact.email}`}/>
-                <ListGroup.Item >
-                    <Accordion flush>
-                        <Accordion.Header>
-                        <Container fluid>
-                            <Row>
-                                <Col><img src = {AddressIcon} width="32px"></img></Col>
-                                <Col className='text-end align-self-center'>Address:</Col>
-                            </Row>
-                        </Container>
-                        </Accordion.Header>
-                        <Accordion.Body>
-                            <ListGroup>
-                                <AddressInfoListItem label="Address:" info={`${contact.address.suite}, ${contact.address.street}`}/>
-                                <AddressInfoListItem label="City:" info={contact.address.city}/>
-                                <AddressInfoListItem label="Zip/Post Code:" info={contact.address.zipcode}/>
-                            </ListGroup>
-                        </Accordion.Body>
-                    </Accordion>
-                    
-                </ListGroup.Item>
-            </ListGroup>
-        </Card>
+        <Col sm={8}>
+            <Card className='contactCard bg-secondary text-light'>
+                <Card.Header className='text-center'>{contact.name}</Card.Header>
+                <ListGroup variant="flush">
+                    <InfoListItem icon={CallIcon} info={contact.phone} url={`tel: ${contact.phone}`}/>
+                    <InfoListItem icon={EmailIcon} info={contact.email} url={`mailto: ${contact.email}`}/>
+                    <ListGroup.Item >
+                        <Accordion flush>
+                            <Accordion.Header>
+                            <Container fluid>
+                                <Row>
+                                    <Col><img src = {AddressIcon} width="32px"></img></Col>
+                                    <Col className='text-end align-self-center'>Address:</Col>
+                                </Row>
+                            </Container>
+                            </Accordion.Header>
+                            <Accordion.Body>
+                                <ListGroup>
+                                    <AddressInfoListItem label="Address:" info={`${contact.address.suite}, ${contact.address.street}`}/>
+                                    <AddressInfoListItem label="City:" info={contact.address.city}/>
+                                    <AddressInfoListItem label="Zip/Post Code:" info={contact.address.zipcode}/>
+                                </ListGroup>
+                            </Accordion.Body>
+                        </Accordion>
+                        
+                    </ListGroup.Item>
+                </ListGroup>
+            </Card>
         </Col>
     )
 }
