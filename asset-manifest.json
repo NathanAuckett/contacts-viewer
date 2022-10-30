@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/contacts-viewer/static/css/main.1de7033b.css",
+    "main.js": "/contacts-viewer/static/js/main.870dddd0.js",
+    "static/js/787.6c7b0600.chunk.js": "/contacts-viewer/static/js/787.6c7b0600.chunk.js",
+    "index.html": "/contacts-viewer/index.html",
+    "static/media/call.svg": "/contacts-viewer/static/media/call.02af061e66783ca2006ed508969a4506.svg",
+    "static/media/mail.svg": "/contacts-viewer/static/media/mail.5a387e74dbef285fe81a3cd40ea170b5.svg",
+    "static/media/home.svg": "/contacts-viewer/static/media/home.5a85d11a5d6fb5e0ac68e6cf1fabf8ef.svg",
+    "main.1de7033b.css.map": "/contacts-viewer/static/css/main.1de7033b.css.map",
+    "main.870dddd0.js.map": "/contacts-viewer/static/js/main.870dddd0.js.map",
+    "787.6c7b0600.chunk.js.map": "/contacts-viewer/static/js/787.6c7b0600.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1de7033b.css",
+    "static/js/main.870dddd0.js"
+  ]
+}
