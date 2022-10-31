@@ -6,12 +6,19 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 import Header from "./components/Header/Header";
+import Search from "./components/Search/Search";
 import ContactCard from "./components/ContactCard/ContactCard";
 import SortButton from "./components/SortButton/SortButton";
 
 
 function App() {
 	const [contacts, setContacts] = useState([]);
+	const [search, setSearch] = useState("");
+	
+	function searchHandleChange(event){
+        setSearch(event.target.value);
+    }
+
 	useEffect(() => {
 		getContacts();
 	}, []);
@@ -27,18 +34,36 @@ function App() {
 	
 
 	return (
-		<Container fluid className="app">
-			<Container >
+		<Container fluid h={100} className="app">
+			<Container>
 				<Header/>
+
 				<Row className="justify-content-center">
+					<Search value={search} handleChange={searchHandleChange}/>
 					<SortButton contacts={contacts} set={setContacts}/>
 				</Row>
 
+				{/* <Row className="justify-content-center">
+					
+				</Row> */}
+
 				{contacts.map((e) => {
-					return (
-						<Row className="justify-content-center">
-							<ContactCard contact={e}></ContactCard>
-						</Row>)
+					if (search == ""){ //No search input
+						return (
+							<Row className="justify-content-center">
+								<ContactCard contact={e}></ContactCard>
+							</Row>
+						)
+					}
+					else{ //If search has text input
+						if (e.name.toLowerCase().includes(search.toLowerCase())){
+							return (
+								<Row className="justify-content-center">
+									<ContactCard contact={e}></ContactCard>
+								</Row>
+							)
+						}
+					}
 				})}
 
 			</Container>

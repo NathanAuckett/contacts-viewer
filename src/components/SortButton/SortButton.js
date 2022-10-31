@@ -20,9 +20,9 @@ export default function SortButton(props){
     }
 
     return (
-        <Col sm={8} className="sortButton text-end">
+        <Col xs={4} md={2} className="sortButton text-end">
             <Button variant="secondary" onClick={changeDir}>
-                <img src={SortIcon} width="25px" className='filter-white'></img>
+                <img src={SortIcon} width="34px" className='filter-white'></img>
             
                 {dir > 0 ? <img src = {DownIcon} width="25px" className='filter-white'></img> : <img src = {UpIcon} width="25px" className='filter-white'></img>}
             </Button>
