@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
+
+//CSS
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+//BootStrap components
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
+//Custom components
 import Header from "./components/Header/Header";
 import Search from "./components/Search/Search";
 import ContactCard from "./components/ContactCard/ContactCard";
@@ -19,11 +23,12 @@ function App() {
         setSearch(event.target.value);
     }
 
+
 	useEffect(() => {
 		getContacts();
 	}, []);
 
-	async function getContacts() {
+	async function getContacts() { //Fetches contacts from API. If this was real, API endpoint/key would likely need to be stored elsewhere instead of being hard coded here
 		const result = await fetch("https://jsonplaceholder.typicode.com/users");
 		const json = await result.json();
 
@@ -43,25 +48,22 @@ function App() {
 					<SortButton contacts={contacts} set={setContacts}/>
 				</Row>
 
+				{/*Display contact cards*/}
 				<Row className="justify-content-center">
-				{contacts.map((e) => {
-					if (search == ""){ //No search input
-						return (
-							
-								<ContactCard contact={e}></ContactCard>
-							
-						)
-					}
-					else{ //If search has text input
-						if (e.name.toLowerCase().includes(search.toLowerCase())){
+					{contacts.map((e) => {
+						if (search == ""){ //No search input
 							return (
-								// <Row className="justify-content-center">
-									<ContactCard contact={e}></ContactCard>
-								// </Row>
+								<ContactCard contact={e}></ContactCard>
 							)
 						}
-					}
-				})}
+						else{ //If search has text input
+							if (e.name.toLowerCase().includes(search.toLowerCase())){
+								return (
+									<ContactCard contact={e}></ContactCard>
+								)
+							}
+						}
+					})}
 				</Row>
 
 			</Container>

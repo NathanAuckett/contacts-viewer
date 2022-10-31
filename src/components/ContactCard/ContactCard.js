@@ -42,6 +42,7 @@ function AddressInfoListItem(props){
     )
 }
 
+
 export default function Contact(props){
     const contact = props.contact;
 
@@ -70,7 +71,6 @@ export default function Contact(props){
                                 </ListGroup>
                             </Accordion.Body>
                         </Accordion>
-                        
                     </ListGroup.Item>
                 </ListGroup>
             </Card>

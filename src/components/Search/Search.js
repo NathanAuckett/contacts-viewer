@@ -8,8 +8,6 @@ export default function Search(props){
     
     return (
         <Col xs={8} sm={9} md={10} lg={10}>
-            {/* <input id="input" type="text" onChange={props.handleChange}></input> */}
-
             <InputGroup size="lg" className="mb-3">
                 <Form.Control onChange={props.handleChange}
                     placeholder="Name Search"
