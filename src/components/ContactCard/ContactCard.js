@@ -46,7 +46,7 @@ export default function Contact(props){
     const contact = props.contact;
 
     return (
-        <Col sm={12} md={8}>
+        <Col sm={12} lg={6} xxl={4}>
             <Card className='contactCard bg-secondary text-light'>
                 <Card.Header className='text-center'><h5>{contact.name}</h5></Card.Header>
                 <ListGroup variant="flush">

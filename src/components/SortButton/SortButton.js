@@ -20,7 +20,7 @@ export default function SortButton(props){
     }
 
     return (
-        <Col xs={4} md={2} className="sortButton text-end">
+        <Col xs={4} sm={3} md={2} lg={2} className="sortButton text-end">
             <Button variant="secondary" onClick={changeDir}>
                 <img src={SortIcon} width="34px" className='filter-white'></img>
             

@@ -43,28 +43,26 @@ function App() {
 					<SortButton contacts={contacts} set={setContacts}/>
 				</Row>
 
-				{/* <Row className="justify-content-center">
-					
-				</Row> */}
-
+				<Row className="justify-content-center">
 				{contacts.map((e) => {
 					if (search == ""){ //No search input
 						return (
-							<Row className="justify-content-center">
+							
 								<ContactCard contact={e}></ContactCard>
-							</Row>
+							
 						)
 					}
 					else{ //If search has text input
 						if (e.name.toLowerCase().includes(search.toLowerCase())){
 							return (
-								<Row className="justify-content-center">
+								// <Row className="justify-content-center">
 									<ContactCard contact={e}></ContactCard>
-								</Row>
+								// </Row>
 							)
 						}
 					}
 				})}
+				</Row>
 
 			</Container>
 		</Container>
