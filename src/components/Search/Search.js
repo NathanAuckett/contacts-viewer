@@ -12,8 +12,8 @@ export default function Search(props){
 
             <InputGroup size="lg" className="mb-3">
                 <Form.Control onChange={props.handleChange}
-                    placeholder="Search"
-                    aria-label="Search"
+                    placeholder="Name Search"
+                    aria-label="Name Search"
                     aria-describedby="basic-addon2"
                 />
             </InputGroup>
