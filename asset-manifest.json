@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/contacts-viewer/static/css/main.c91f290a.css",
-    "main.js": "/contacts-viewer/static/js/main.11aebfc1.js",
+    "main.js": "/contacts-viewer/static/js/main.0580c786.js",
     "static/js/787.6c7b0600.chunk.js": "/contacts-viewer/static/js/787.6c7b0600.chunk.js",
     "index.html": "/contacts-viewer/index.html",
     "static/media/call.svg": "/contacts-viewer/static/media/call.02af061e66783ca2006ed508969a4506.svg",
@@ -11,11 +11,11 @@
     "static/media/up.svg": "/contacts-viewer/static/media/up.ac2b75521e0546594ea1131cd0b2f1f6.svg",
     "static/media/sort.svg": "/contacts-viewer/static/media/sort.25b7956d52ba53db59444a877fd3dfea.svg",
     "main.c91f290a.css.map": "/contacts-viewer/static/css/main.c91f290a.css.map",
-    "main.11aebfc1.js.map": "/contacts-viewer/static/js/main.11aebfc1.js.map",
+    "main.0580c786.js.map": "/contacts-viewer/static/js/main.0580c786.js.map",
     "787.6c7b0600.chunk.js.map": "/contacts-viewer/static/js/787.6c7b0600.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c91f290a.css",
-    "static/js/main.11aebfc1.js"
+    "static/js/main.0580c786.js"
   ]
 }
