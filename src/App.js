@@ -10,9 +10,6 @@ import ContactCard from "./components/ContactCard/ContactCard";
 import SortButton from "./components/SortButton/SortButton";
 
 
-
-
-
 function App() {
 	const [contacts, setContacts] = useState([]);
 	useEffect(() => {
