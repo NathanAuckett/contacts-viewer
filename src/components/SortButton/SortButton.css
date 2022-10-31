@@ -2,3 +2,7 @@
 .sortButton {
     margin-bottom: 0.3rem;
 }
+
+.filter-white{
+    filter: invert(95%) sepia(0%) saturate(7491%) hue-rotate(316deg) brightness(103%) contrast(106%);
+}

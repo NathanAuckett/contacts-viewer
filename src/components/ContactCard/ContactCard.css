@@ -1,8 +1,8 @@
 
 .contactCard {
-    /* max-width: 50rem; */
     margin-bottom: 1rem;
     padding: 0px;
+    word-wrap: normal;
 }
 
 .accordion-button{

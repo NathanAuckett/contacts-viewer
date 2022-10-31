@@ -48,7 +48,7 @@ export default function Contact(props){
     return (
         <Col sm={8}>
             <Card className='contactCard bg-secondary text-light'>
-                <Card.Header className='text-center'>{contact.name}</Card.Header>
+                <Card.Header className='text-center'><h5>{contact.name}</h5></Card.Header>
                 <ListGroup variant="flush">
                     <InfoListItem icon={CallIcon} info={contact.phone} url={`tel: ${contact.phone}`}/>
                     <InfoListItem icon={EmailIcon} info={contact.email} url={`mailto: ${contact.email}`}/>
